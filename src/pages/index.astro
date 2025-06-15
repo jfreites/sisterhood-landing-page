@@ -16,49 +16,6 @@ import Layout from "../layouts/Layout.astro";
             </h1>
           </a>
         </div>
-
-        <!-- <div class="hidden md:block">
-          <nav aria-label="Global">
-            <ul class="flex items-center gap-6 text-md">
-              <li>
-                <a
-                  class="text-primary transition hover:text-[#6d123f]/75"
-                  href="#about"
-                >
-                  Sobre nosotros
-                </a>
-              </li>
-
-              <li>
-                <a
-                  class="text-primary transition hover:text-[#6d123f]/75"
-                  href="#services"
-                >
-                  ¿Que hacemos?
-                </a>
-              </li>
-
-              <li>
-                <a
-                  class="text-primary transition hover:text-[#6d123f]/75"
-                  href="#"
-                >
-                  Testimonios
-                </a>
-              </li>
-
-              <li>
-                <a
-                  class="text-primary transition hover:text-[#6d123f]/75"
-                  href="#blog"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div> -->
-
         <div class="flex items-center gap-4">
           <span
             class="block text-primary text-md leading-tight text-center md:text-right"
@@ -67,14 +24,6 @@ import Layout from "../layouts/Layout.astro";
             Lic. Silvia Chirinos Medrano <br />
             Psicóloga Clínica
           </span>
-          <!-- <div class="sm:flex sm:gap-4">
-            <a
-              href="#book"
-              class="py-4 px-10 inline-flex items-center rounded-[36px] border-secondary text-primary bg-light transition-all duration-300 ease-in-out hover:transition-all hover:duration-300 hover:ease-out hover:bg-secondary hover:text-extra-light"
-            >
-              <span class="text-md font-medium"> Agenda tu cita </span>
-            </a>
-          </div> -->
         </div>
       </div>
       <div class="mt-0 md:mt-4 flex flex-col md:flex-row justify-between">
@@ -85,7 +34,7 @@ import Layout from "../layouts/Layout.astro";
                 class="text-primary transition hover:text-[#6d123f]/75"
                 href="#about"
               >
-                Sobre nosotros
+                Somos Sisterhood
               </a>
             </li>
 
@@ -101,9 +50,18 @@ import Layout from "../layouts/Layout.astro";
             <li>
               <a
                 class="text-primary transition hover:text-[#6d123f]/75"
-                href="#"
+                href="#testimonials"
               >
                 Testimonios
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-primary transition hover:text-[#6d123f]/75"
+                href="#"
+              >
+                Productos Digitales
               </a>
             </li>
 
@@ -152,20 +110,6 @@ import Layout from "../layouts/Layout.astro";
 
   <!-- CTA -->
   <section class="flex flex-col bg-light">
-    <!-- replace this media -->
-    <!-- <video
-      playsinline=""
-      autoplay=""
-      muted=""
-      loop=""
-      class="h-[680px] w-full object-cover"
-    >
-      <source
-        src="https://themesflat.co/html/healingy/video/video-page-title.mp4"
-        type="video/mp4"
-      />
-    </video> -->
-
     <img
       src="hero.webp"
       class="h-[680px] w-full object-cover"
@@ -176,18 +120,17 @@ import Layout from "../layouts/Layout.astro";
       class="flex flex-col md:flex-row mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
     >
       <div>
-        <h2 class="text-4xl font-semibold text-primary text-balance">
+        <h2 class="text-4xl font-semibold text-primary text-balance uppercase">
           Da el Primer Paso Hacia Una Vida Equilibrada y Plena.
         </h2>
       </div>
       <div>
-        <p class="text-2xl text-primary p-4 text-balance">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          consequuntur amet culpa cum itaque neque.
+        <p class="text-2xl text-primary p-4 text-balance uppercase">
+          A través de la terapia cognitiva podemos medir avances y cambios hacia tu bienestar biopsicosocial.
         </p>
         <hr class="py-2" />
 
-        <button
+        <a title="Agenda una cita" href="#book" 
           class="flex py-4 px-10 md:inline-flex items-center gap-2 rounded-[36px] text-extra-light bg-primary transition-all duration-300 ease-in-out hover:transition-all hover:duration-300 hover:ease-out hover:bg-secondary hover:text-extra-light"
         >
           <span class="text-xl md:text-sm font-medium"> Agenda tu cita </span>
@@ -204,14 +147,14 @@ import Layout from "../layouts/Layout.astro";
               stroke-width="2"
               d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
           </svg>
-        </button>
+        </a>
 
         <p
           class="block py-6 md:py-0 text-balance md:inline ml-4 text-xl text-primary"
         >
-          o escríbenos por WhatsApp: <span class="font-semibold"
-            >+ 52 56 1293 3684</span
-          >
+          o escríbenos por WhatsApp: <a title="Escribenos por WhatsApp" target="_blank" href="https://wa.me/1525612933684?text=Estoy%20interesado%20en%20agendar%20una%20cita"><span class="font-semibold"
+            >+52 56 1293 3684</span
+          ></a>
         </p>
       </div>
     </div>
@@ -223,24 +166,49 @@ import Layout from "../layouts/Layout.astro";
     class="flex flex-col items-center text-center text-primary"
   >
     <div class="max-w-7xl p-10">
-      <p>SOBRE SISTERHOOD</p>
+      <p class="text-xl">SOMOS SISTERHOOD</p>
       <h3 class="text-4xl py-4">
         Brindamos Apoyo Psicológico Profesional, Dedicado y Experimentado
       </h3>
-      <h5 class="text-2xl py-4">
-        Es un consultorio online confiable de asesoramiento y terapia, a cargo
-        de una profesional experimentada y dedicada a escuchar, apoyar y guiar a
-        sus pacientes. Creemos en el potencial de todos para sanar y crecer con
-        el cuidado adecuado.
+      <h5 class="text-2xl py-4 text-pretty">
+        Somos una plataforma online, desarrollada y dirigida por mujeres y para mujeres. SISTERHOOD TERAPIA ofrece herramientas prácticas a través de Consulta 1:1 y/o Grupal, Programas y Masterclass; basados en la terapia cognitivo - conductual, con el fin de brindar bienestar, a través del acompañamiento de procesos a mujeres que deseen equilibrio y bienestar en sus diferentes roles.
       </h5>
-
-      <button
+      <!-- <button
         class="mt-4 py-4 px-10 w-[250px] rounded-[36px] border-2 border-secondary text-primary transition-all duration-300 ease-in-out hover:transition-all hover:duration-300 hover:ease-out hover:bg-secondary hover:text-extra-light"
       >
         <span class="text-md font-medium"> Más información </span>
-      </button>
+      </button> -->
 
       <hr class="text-primary mt-12 mb-6" />
+
+      <div class="flex flex-col md:flex-row justify-between items-start">
+        <div class="silvia-bio flex flex-col p-4 md:p-6">
+          <div class="flex justify-center mb-6 md:mb-4">
+            <img src="https://avatar.iran.liara.run/public/62" class="h-64 w-64 object-contain rounded-full border-2 border-primary" alt="Sonia Chirinos">
+          </div>
+          <div>
+            <p class="font-semibold text-3xl">Silvia Chirinos Medrano</p>
+            <p class="font-light text-lg py-2">Directora General, Terapeuta y Co-fundadora de Sisterhood. </p>
+            <p class="text-pretty mb-2">Graduada en la Universidad de la Universidad Central de Venezuela como Lic. en Psicología General, mención Clínica. Cuenta con 20 años en terapia individual y grupal basada en la teoría Ecológica y Cognitivo-Conductual. Dedicando gran parte de su experiencia al área del neurodesarrollo y  modificación de conducta en personas neurotípicas y neurodivergentes.</p>
+            <p class="text-pretty">
+              En el 2024 se certificó en la metodología “Psicovivir” que propone abordar a través de terapias breves, soluciones a las problemáticas que afronta el paciente con mayor inmediatez. Actualmente reside en Guatemala.
+            </p>
+          </div>
+        </div>
+
+        <div class="sonia-bio flex flex-col p-4 md:p-6">
+          <div class="flex justify-center mb-6 md:mb-4">
+            <img src="https://avatar.iran.liara.run/public/57" class="h-64 w-64 object-contain rounded-full border-2 border-primary" alt="Sonia Chirinos">
+          </div>
+          <div>
+            <p class="font-semibold text-3xl">Sonia Chirinos Medrano</p>
+            <p class="font-light text-lg py-2">Directora Operativa y Co-fundadora de Sisterhood. </p>
+            <p class="text-pretty mb-2">Graduada en la Universidad Central de Venezuela de Comunicación Social. Con postgrado en Gerencia en Comunicaciones Corporativas  en la Universidad Metropolitana y un Diplomado en Marketing Digital y Redes Sociales en Avepane.</p>
+            <p class="text-pretty">Cuenta con más de 23 años en el mundo corporativo vinculado al área comunicacional, desarrollando proyectos con diferentes marcas. Igualmente ha liderado agencias de comunicaciones en Venezuela y México. Recientemente creó Comelona & Cocinera, como una oportunidad de explorar otras habilidades e intereses. Actualmente reside en la CDMX.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -250,31 +218,49 @@ import Layout from "../layouts/Layout.astro";
   <section id="services" class="bg-light text-primary">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
       <div class="flex flex-col md:flex-row md:space-x-96">
-        <div class="">
-          <p>¿QUE HACEMOS?</p>
-          <h3 class="text-4xl py-4">Servicios de Asesoramiento y Terapia</h3>
-          <p>
-            Ofrecemos una amplia gama de servicios para satisfacer sus
-            necesidades personales.
-          </p>
-        </div>
-        <div class="">
-          <button
-            class="mt-4 py-4 px-10 w-[310px] rounded-[36px] border-2 border-secondary bg-extra-light text-primary transition-all duration-300 ease-in-out hover:transition-all hover:duration-300 hover:ease-out hover:bg-secondary hover:text-extra-light"
-          >
-            <span class="text-md font-medium">
-              Explora nuestros servicios
-            </span>
-          </button>
+        <div class="max-w-7xl p-10 text-center">
+          <p class="text-xl">SERVICIOS</p>
+          <h3 class="text-2xl lg:text-4xl py-4">Ofrecemos una amplia gama de servicios para satisfacer sus necesidades personales</h3>
+          <p class="text-xl py-4 md:py-6">Acompañamos tus procesos a través de:</p>
         </div>
       </div>
-      <div class="mt-4 mb-6 grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
-        <div class="h-32 rounded-lg bg-gray-200"></div>
-        <div class="h-32 rounded-lg bg-gray-200"></div>
-        <div class="h-32 rounded-lg bg-gray-200"></div>
-        <div class="h-32 rounded-lg bg-gray-200"></div>
-        <div class="h-32 rounded-lg bg-gray-200"></div>
-        <div class="h-32 rounded-lg bg-gray-200"></div>
+      <div class="mt-4 mb-6 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
+        <div class="flex flex-col h-fit rounded-lg items-center gap-y-4 p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+          </svg>
+          <p class="text-xl font-semibold">Intervención Psicológica </p>
+          <p class="text-pretty">Si presentas ansiedad, depresión, falta de autoestima, necesitas resolver conflictos, eres paciente con trastornos de neurodesarrollo, o simplemente trabajar en ti para buscar bienestar esta sesión es para ti. </p>
+        </div>
+
+        <div class="flex flex-col h-fit rounded-lg items-center gap-y-4 p-4">
+          <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plant-2 size-12"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 9a10 10 0 1 0 20 0" /><path d="M12 19a10 10 0 0 1 10 -10" /><path d="M2 9a10 10 0 0 1 10 10" /><path d="M12 4a9.7 9.7 0 0 1 2.99 7.5" /><path d="M9.01 11.5a9.7 9.7 0 0 1 2.99 -7.5" /></svg>
+
+          <p class="text-xl font-semibold">Autoconocimiento y bienestar</p>
+          <p class="text-pretty">Te acompañamos a través de terapia 1:1, tu proceso de crecimiento personal o a través de Programas y Masterclass.</p>
+        </div>
+
+        <div class="flex flex-col h-fit rounded-lg items-center gap-y-4 p-4">
+          <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-friends size-12"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5" /><path d="M17 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4" /></svg>
+
+          <p class="text-xl font-semibold">Asesoría para Padres </p>
+          <p class="text-pretty">Este espacio está diseñado para atender el comportamiento y emociones de tu hijo, a través de la teoría sistémica y cognitivo conductual en consultas individuales o programas específicos grupales. Recibirán orientación y acompañamientos a familias que busquen adquirir herramientas que les permitan favorecer el proceso conductual de su hijo.</p>
+        </div>
+
+        <div class="flex flex-col h-fit rounded-lg items-center gap-y-4 p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+          </svg>
+          <p class="text-xl font-semibold text-center">Consultoría Empresarial "A tu medida"</p>
+          <p class="text-pretty">A través de una asesoría conjuntamente con el área de RRHH, se evaluarán las necesidades propias de la empresa y sus colaboradores, en mira de ofrecerles talleres o Masterclass para coadyuvar al clima organizacional.</p>
+        </div>
+
+        <div class="flex flex-col h-fit rounded-lg items-center gap-y-4 p-4">
+          <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brain size-12"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8" /><path d="M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8" /><path d="M17.5 16a3.5 3.5 0 0 0 0 -7h-.5" /><path d="M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0" /><path d="M6.5 16a3.5 3.5 0 0 1 0 -7h.5" /><path d="M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10" /></svg>
+
+          <p class="text-xl font-semibold text-center">Acompañamos equipos interdisciplinarios del neurodesarrollo</p>
+          <p class="text-pretty">Asesoría a profesionales que aborden pacientes del neurodesarrollo desde la teoría ecológica, y la terapia cognitivo-conductual. Además de acompañamiento para el desarrollo de habilidades y competencias para el ejercicio durante la terapia 1:1.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -282,8 +268,7 @@ import Layout from "../layouts/Layout.astro";
   <!-- Blog -->
   <section id="blog" class="text-center text-primary py-4">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
-      <p>TEMAS RELEVANTES</p>
-      <h3 class="text-4xl py-4">Sisterhood Blog y Recursos</h3>
+      <h3 class="text-2xl md:text-3xl py-4"><span class="text-3xl md:text-4xl">Sisterhood</span>: Blog y Recursos</h3>
       <h5 class="text-2xl py-4">
         Su fuente de referencia para obtener información, herramientas y
         consejos sobre salud mental.
@@ -298,19 +283,43 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
+  <hr>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="text-center text-primary py-4">
+    <div class="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8 lg:pt-16">
+      <h3 class="text-2xl md:text-3xl py-4 mb-4">Testimonios</h3>
+
+      <div class="relative max-w-7xl rounded-xl bg-gray-200 p-12 text-start text-balace">
+        <p class="py-2">
+          Jamás me imaginé que mi relación con la comida pudiese convertirse en algo tan indiferente para mí. Y es que no es ni fue una decisión consciente de mi parte; a mí simplemente me dejaron de dar ganas de comer. Perdí el gusto por saborear cualquier alimento que probaba. Reconozco que más de una vez pasé el día entero sin probar bocado alguno sin percatarme de lo que estaba haciendo. Y no, no era por ese ideal de belleza que venden las redes sociales, las series o las películas. Simplemente no recibía esa señal de que mi cuerpo necesitaba comer.
+        </p>
+        <p class="py-2">
+        Con el tiempo, empecé a notar las consecuencias: el cansancio, los mareos. Fue ahí cuando entendí que necesitaba ayuda. Llevo ya varios años en terapia, y fue gracias a la terapia que descubrí que mi relación con la comida es una historia que merece ser contada.
+        </p>
+        <p class="py-2"></p>
+        Las sesiones con mi psicóloga han sido un espacio donde me he sentido acompañada, segura, sin juicios. Tiene una manera tan cálida y amable de estar presente, que desde el primer momento me sentí en confianza. Ella no busca encasillarme, me escucha de verdad, con curiosidad sincera, queriendo entender quién soy más allá de la imagen que proyecto al mundo.
+        </p>
+        
+        <div class="absolute top-full right-10 w-0 h-0 border-t-8 border-t-gray-200 border-l-8 border-l-transparent border-r-8 border-r-transparent"></div>
+      </div>
+      <p class="text-end p-6"><span class="font-semibold">"C.M"</span></p>
+    </div>
+  </section>
+
   <!-- Book consultation -->
   <section id="book" class="text-primary py-4">
     <div
-      class="flex flex-col md:flex-row mx-auto bg-light md:rounded-xl max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+      class="flex flex-col md:flex-row mx-auto bg-light md:rounded-xl max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:pt-12"
     >
-      <div class="w-2/3">
+      <div class="w-1/2 p-2">
         <p>AGENDA TU CONSULTA</p>
         <h4 class="text-3xl py-4">
-          Comienza tu viaje hacia una vida más saludable y satisfactoria.
+          Comienza tu proceso de autodescubrimiento y bienestar mental y físico
         </h4>
         <p>Conecta con nosotros para programar tu primera consulta.</p>
         <div class="flex flex-col mt-10">
-          <a href="#" class="inline-flex py-2">
+          <a href="mailto:sisterhoodconsultorioonline@gmail.com " class="inline-flex py-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -325,10 +334,10 @@ import Layout from "../layouts/Layout.astro";
                 d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"
               ></path>
             </svg>
-            <span class="ml-2 text-md">info@sisterhoodterapia.com </span>
+            <span class="ml-2 text-md">sisterhoodconsultorioonline@gmail.com</span>
           </a>
 
-          <a href="#" class="inline-flex py-2">
+          <a href="tel:+525612933684" class="inline-flex py-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -343,13 +352,35 @@ import Layout from "../layouts/Layout.astro";
                 d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
               ></path>
             </svg>
-            <span class="ml-2 text-md">+ 52 56 1293 3684</span>
+
+            <span class="ml-2 text-md"
+            >+52 56 1293 3684</span
+          ></a>
           </a>
         </div>
       </div>
-      <div class="w-full mt-4 md:mt-0 bg-extra-light rounded-xl p-10 md:w-1/3">
-        <h4>Obtén tu primer consulta gratis</h4>
-        <p>FORMULARIO AQUI</p>
+      <div class="w-full mt-4 md:mt-0 bg-extra-light rounded-xl p-6 md:w-1/2">
+        <h4 class="text-4xl font-semibold">Obtén tu primer consulta gratis</h4>
+        
+        <div>
+          <form name="contact" netlify>
+            <p class="p-6">
+              <label>Nombre completo <span class="text-red-400">*</span></label>
+              <input type="text" name="name" class="rounded-lg p-4 w-full" placeholder="Escribe tu nombre" required />
+            </p>
+            <p class="p-6">
+              <label>Correo Electrónico <span class="text-red-400">*</span></label>
+              <input type="email" name="email" class="rounded-lg p-4 w-full" placeholder="email@dominio.com" required />
+            </p>
+            <p class="p-6">
+              <label>Teléfono</label>
+              <input type="tel" name="phone" class="rounded-lg p-4 w-full" placeholder="Opcional puedes dejar tu teléfono" />
+            </p>
+            <p class="p-6">
+              <button class="px-4 py-2 rounded-lg bg-primary text-white hover:bg-secondary" type="submit">Enviar</button>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -401,17 +432,7 @@ import Layout from "../layouts/Layout.astro";
             >
               <span class="sr-only"> Facebook </span>
 
-              <svg
-                class="size-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clip-rule="evenodd"></path>
-              </svg>
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
             </a>
 
             <a
@@ -422,17 +443,7 @@ import Layout from "../layouts/Layout.astro";
             >
               <span class="sr-only"> Instagram </span>
 
-              <svg
-                class="size-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                  clip-rule="evenodd"></path>
-              </svg>
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
             </a>
 
             <a
@@ -443,16 +454,7 @@ import Layout from "../layouts/Layout.astro";
             >
               <span class="sr-only"> LinkedIn </span>
 
-              <svg
-                class="size-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                ></path>
-              </svg>
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
             </a>
           </div>
         </div>
