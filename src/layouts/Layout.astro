@@ -4,6 +4,7 @@ interface Props {
 }
 
 import { ViewTransitions } from 'astro:transitions';
+import Hamburger from '../components/Hamburger.astro';
 
 const { title } = Astro.props;
 
@@ -72,31 +73,27 @@ const menuItems = [
           <div class="flex flex-row justify-between">
             <div class="text-center py-4 sm:py-0 sm:flex sm:gap-4">
               <a
-                href="#book"
-                class="py-4 px-10 inline-flex items-center rounded-[36px] border-secondary text-primary bg-light transition-all duration-300 ease-in-out hover:transition-all hover:duration-300 hover:ease-out hover:bg-secondary hover:text-extra-light"
+                href="/#book"
+                class="py-4 px-10 inline-flex items-center rounded-[36px] border-secondary text-primary bg-light transition-all duration-300 ease-in-out  hover:transition-all hover:duration-300 hover:ease-out hover:bg-secondary hover:text-extra-light"
               >
                 <span class="text-md font-medium"> Agenda tu cita </span>
               </a>
             </div>
 
             <div class="flex md:hidden">
-              <button class="p-2 text-primary transition hover:text-primary/75">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="size-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-              </button>
+              <Hamburger />
             </div>
           </div>
+        </div>
+        <div class="nav-links hidden">
+           {menuItems.map(item => (
+              <a
+                class="text-primary transition hover:text-[#6d123f]/75"
+                href={item.url}
+              >
+                {item.name}
+              </a>
+            ))}
         </div>
       </div>
     </header>
@@ -199,6 +196,11 @@ const menuItems = [
         </p>
       </div>
     </footer>
+    <script>
+    document.querySelector('.hamburger')?.addEventListener('click', () => {
+      document.querySelector('.nav-links')?.classList.toggle('expanded');
+    });
+  </script>
   </body>
 </html>
 <style is:global>
@@ -277,5 +279,38 @@ const menuItems = [
     font-family: "Roboto", sans-serif;
     background-color: var(--extra-light);
     scroll-behavior: smooth;
+  }
+
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  /* mobile nav styles */
+  .nav-links {
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    background-color: var(--light);
+    display: none;
+    margin: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: var(--ligth);
+  }
+
+  .expanded {
+    display: unset;
   }
 </style>
